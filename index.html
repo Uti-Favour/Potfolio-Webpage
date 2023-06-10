@@ -7,31 +7,29 @@
     <title>Potfolio Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-      rel="stylesheet"
-    />
+   
+    
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#"> Home</a></li>
-            <li><a href="#"> Skills</a></li>
-            <li><a href="#"> Projects</a></li>
-            <li><a href="#"> Team</a></li>
-            <li><a href="#"> Testimonia</a></li>
-           
+            <li><a href="#container2"> Skills</a></li>
+            <li><a href="#portfolio"> Projects</a></li>
+            <li><a href="#container5"> Team</a></li>
+            <li><a href="#header-text"> About</a></li>
+            
         </ul>
     </nav>
     
     <div class="container">
         <div class="content">
-        <h1>HELLO!<br>
-             I AM A  <span class="auto-type"> </span></h1>
+        <h1>HELLO! <img src="images/waving-hand.png" class="wave" style="width: 10%; height: auto;"><br>
+             I AM A  <span class="auto-type"> </span></h1><img src="images/waving-hand.png" alt="">
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
                  Quas esse soluta provident corrupti delectus voluptates <br>
                  optio in minima? Necessitatibus, sapiente?</p>
-             <img src="images/peace.jpg" alt="">
+             <img class="head-image" src="images/peace.jpg" >
 
              </div>
              <div class="social-links">
@@ -46,7 +44,7 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type",{
-            strings:["DESIGNER","DEVELOPER","COACH"],
+            strings:["DESIGNER","TRADER","COACH"],
             typeSpeed:150,
             backSpeed:150,
             loop:true
@@ -55,7 +53,7 @@
 
 
 <!-- ----servicepage---- -->
-    <div class="container2">
+    <div id="container2">
         <h1>MY SKILLS</h1>
         <div class="row">
             <div class="service">
@@ -109,151 +107,191 @@
             </div>
         </div>
     </div>
+  
+    <!-- ----------------------------About Section--------------------------- -->
+    <div id="header-text"><h1>ABOUT ME</h1></div>
+
     <div class="second-section">
-        <h2>I"m trying to <span class="auto-input"></span><br> different
-             layouts</h2>
+      
+        <h2>What you need to <br>
+            know <span>About Me</span></h2>
             <p>Lorem ipsum dolor sit amet aroma nomat
                 <br>Now this is the pararaph i'll 
                 <br>be using for this, </p>
+                <button>Learn More</button>
                
     </div>
     <div>
         <img src="images/peace.jpg" class="peace">
     </div>
-    <div class="portfolio">
-        <div class="container4">
-
-
-            <!-- ----Projectsection---- -->
-            <h1 class="Sub-title">MY PROJECTS</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" >
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur <br>
-                             incidunt sequi corporis culpa nostrum eaque.</p>
-                             <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
+              <!-- ----------------------Projects------------------------------  -->
+   
+<div id="portfolio">
+    <div class="project-container">
+        <h1>MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br>
+                         incidunt sequi corporis culpa nostrum eaque.</p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" >
-                    <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur <br>
-                             incidunt sequi corporis culpa nostrum eaque.</p>
-                             <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" >
-                    <div class="layer">
-                        <h3>Online App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur <br>
-                             incidunt sequi corporis culpa nostrum eaque.</p>
-                             <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-    
-    
             </div>
-            <a href="#" class="btn">See More</a>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br>
+                         incidunt sequi corporis culpa nostrum eaque.</p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Online App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur <br>
+                         incidunt sequi corporis culpa nostrum eaque.</p>
+                         <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+    <!-- -----------------------Video Section---------------------------------- -->
+
+    <div id="container5">
+        <div class="video-container">
+          <video class="video-background" autoplay muted loop>
+            <source src="videos/woman.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <div class="text-section">
+            <h1>My team and principles for Growth</h1>
+                 <p>Every project I undertake follows a systematic workflow<br>
+                     that ensures a smooth and successful execution. 
+                     </p>
+                      <button>LEARN MORE</button>
         </div>
     </div>
-
-
-<!-- ------------Teamsection----------------- -->
-
-    <section>
-        <div class="row1">
-          <h1>Our Team</h1>
-        </div>
-        <div class="row1">
-
-
-
-          <!-- Column 1-->
-          <div class="column">
-            <div class="card">
-              <div class="img-container">
-                <img src="images/Happy-image2.png" alt="">
-              </div>
-              <h3>Luna Turner</h3>
-              <p>Founder</p>
-              <div class="icons">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Column 2-->
-          <div class="column">
-            <div class="card">
-              <div class="img-container">
-                <img class="two" src="images/favour.png" style="border-radius: 50%;">
-              </div>
-              <h3>Bryant Hall</h3>
-              <p>Developer</p>
-              <div class="icons">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-            <!-- Column 3-->
-            <div class="column">
-                <div class="card">
-                  <div class="img-container">
-                    <img src="images/profile.jpg" />
-                  </div>
-                  <h3>Bryant Hall</h3>
-                  <p>Developer</p>
-                  <div class="icons">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fas fa-envelope"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-
-          </div>
-        </div>
-      </section>
+      
+    <!-- ----------------------------------Partners--------------------------------- -->
+   
     
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    
+    <div class="container-slide">
+        <h1>MY PARTNERS</h1>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="images/adidas.png" alt="logo"></div>
+            <div class="slide"><img src="images/facebook.png" alt="logo"></div>
+            <div class="slide"><img src="images/google.png" alt="logo"></div>
+            <div class="slide"><img src="images/instagram.png" alt="logo"></div>
+            <div class="slide"><img src="images/nike.png" alt="logo"></div>
+            <div class="slide"><img src="images/twitter.png" alt="logo"></div>
+            <div class="slide"><img src="images/uber.png" alt="logo"></div>
+            <div class="slide"><img src="images/youtube.png" alt="logo"></div>
+        </section>
+    </div>
+
+    
+
+    <script>
+    
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+    </script>
+
+
+
+
+
+
+
+
+   
+<!-- ---------------------------------Footer--------------------------------------- -->
+
+  <footer class="footer">
+  	 <div class="footer-container">
+  	 	<div class="rows">
+  	 		<div class="footer-col">
+  	 			<h4>community</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">projects</a></li>
+  	 				<li><a href="#">contact us</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">about me</a></li>
+  	 				<li><a href="#">github account</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>my workers</h4>
+  	 			<ul>
+  	 				<li><a href="#">favour</a></li>
+  	 				<li><a href="#">victoria</a></li>
+  	 				<li><a href="#">andrew</a></li>
+  	 				<li><a href="#">abundance</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow me</h4>
+  	 			<div class="online-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  <!-- ------------------------Contact------------------------------ -->
+  <div class="contact">
+    <h1>Commit trial</h1>
+  </div>
+
 </body>
 </html>
